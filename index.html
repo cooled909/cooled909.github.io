@@ -3,98 +3,163 @@
     <head>
         <meta charset="utf-8">
         <title>Eddie's website</title>
+        <link rel="stylesheet" href="style/styles.css">
+        <meta property="og:url" content="http://cooled909.github.io">
+        <meta property="og:type" content="website">
+        <meta property="og:title"  content="Eddie Segura" />
+        <meta property="og:description" content="Eddie's personal website" />
+        <meta property="og:image"    content="images/headshot" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@nickbilton" />
     </head>
     <body>
-        <img src="headshot.png" alt="">
-        <h1>Edward Segura</h1>
-        <h2>CS student at UCR</h2>
-        <!--Insert socials here-->
-        <a href="https://www.linkedin.com/in/edward-segura-b8a827195/">LinkedIn</a>
-        <h3 id="about">About me</h3>
-        <p>Hello! I'm Edward Segura and I'm a fourth year Computer Science student at UCR. I am from Fontana, CA. I am interested in embedded systems and web development.</p>
-        <h3 id="work">Work Experience</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <th>UCR ITS</th>
-                    <td>Student Lab Lead</td>
-                    <td>June 2021 - Present</td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <ul>
-                            <li>Run computer labs around campus</li>
-                            <li>Primarily responsible for upkeep of LaptopAnytime kiosks around campus</li>
-                            <li>Helped image new laptops for kiosks</li>
-                            <li>Lead a department of 25 student workers</li>
-                            <li>Train new hires every quarter</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>UCR Dining</th>
-                    <td>Student Employee</td>
-                    <td>September 2019 - March 2020</td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <ul>
-                            <li>Worked in the dining hall serving students</li>
-                            <li>Used customer service skills to better serve customers</li>
-                            <li>Worked cashier at the front on occasion</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="edu">Education</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <th>University of California, Riverside</th>
-                    <td>B.S. in Computer Science</td>
-                    <td>September 2019 - March 2023</td>
-                </tr>
-                <tr>
-                    <th>Etiwanda High School</th>
-                    <td>HS Diploma</td>
-                    <td>August 2015 - May 2019</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3 id="courses">Coursework</h3>
-        <ul>
-            <li>CS120A - Logic Design</li>
-            <li>CS120B - Intro to Embedded Systems</li>
-            <li>CS122A - Intermediate Embedded Systems</li>
-            <li>CS153 - Design of Operating System</li>
-            <li>CS141 - Intermediate Data Structures and Alogorithms</li>
-            <li>CS150 - Automata and Formal Languages</li>
-        </ul>
-        <h3 id="skills">Skills</h3>
-        <ul>
-            <li>C++/C</li>
-            <li>Python</li>
-            <li>Arduino</li>
-            <li>HTML/CSS</li>
-            <li>Github</li>
-        </ul>
-        <h3 id="projects">Projects</h3>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=ZXzJjhID-gw">MP3 Player</a> 
-             <ul>
-                 <li>Can play MP3 files from an SD card</li>
-                 <li>Can select from different folders/playlists</li>
-                 <li>Has standard pause/play/skip functions</li>
-             </ul>
-             </li>  
-            <li><a href="https://github.com/cooled909/fmradio/tree/main">FM Radio</a>
-            <ul>
-                <li>Can pick up FM signals and output the audio</li>
-                <li>Can save favorite stations</li>
-                <li>Skips frequencies that have low power/aren't broadcasting</li>
-            </ul>
-            </li>
-        </ul>
+        <div class="box">
+            <img class="headshot" src="images/headshot.png" alt="image of me">
+            <div class="mainHeadings">
+                <h1>Edward Segura</h1>
+                <h2>Computer Science student at UCR</h2>
+            </div>
+            <!--Insert socials here-->
+            <div class="row">
+                <div class="column">
+                    <a class="socialLink" href="https://www.linkedin.com/in/edward-segura-b8a827195/"><img class="social" src="images/linkedin.png" alt=""></a>
+                </div>
+                <div class="column">
+                    <a class="socialLink" href="https://github.com/cooled909"><img class="social" src="images/github.png" alt=""></a>
+                </div>
+                <div class="column">
+                    <a href="mailto:esegu007@ucr.edu"><img class="social" src="images/email.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3 id="about">About me</h3>
+            <div class="bio">Hello! I'm Edward Segura and I'm a fourth year Computer Science student at UCR. 
+                I was born and raised in the Inland Empire. I am interested in embedded systems and web development.
+
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3 id="work">Work Experience</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>UCR ITS</th>
+                        <td>Student Lab Lead</td>
+                        <td>June 2021 - Present</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <ul>
+                                <li>Run computer labs around campus</li>
+                                <li>Primarily responsible for upkeep of LaptopAnytime kiosks around campus</li>
+                                <li>Helped image new laptops for kiosks</li>
+                                <li>Lead a department of 25 student workers</li>
+                                <li>Train new hires every quarter</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>UCR Dining</th>
+                        <td>Student Employee</td>
+                        <td>September 2019 - March 2020</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <ul>
+                                <li>Worked in the dining hall serving students</li>
+                                <li>Used customer service skills to better serve customers</li>
+                                <li>Worked cashier at the front on occasion</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="box">
+            <h3 class="edu">Education</h3>
+            <table class="edu">
+                <tbody>
+                    <tr>
+                        <th>University of California, Riverside</th>
+                        <td>B.S. in Computer Science</td>
+                        <td>September 2019 - March 2023</td>
+                    </tr>
+                    <tr>
+                        <th>Etiwanda High School</th>
+                        <td>HS Diploma</td>
+                        <td>August 2015 - May 2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="box">
+            <h3 class="courses">Coursework</h3>
+            <div class="list">
+                <ul>
+                    <li>CS120A - Logic Design</li>
+                    <li>CS120B - Intro to Embedded Systems</li>
+                    <li>CS122A - Intermediate Embedded Systems</li>
+                    <li>CS153 - Design of Operating System</li>
+                    <li>CS141 - Intermediate Data Structures and Alogorithms</li>
+                    <li>CS150 - Automata and Formal Languages</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="skills">Skills</h3>
+            <div class="list">
+                <ul>
+                    <li>C++/C</li>
+                    <li>Python</li>
+                    <li>Arduino</li>
+                    <li>HTML/CSS</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3 class="projects">Projects</h3>
+            <div class="projectList">
+                <table>
+                    <tbody>
+                    <tr>
+                        <th><a class="link" href="https://www.youtube.com/watch?v=ZXzJjhID-gw">MP3 Player</a></th>
+                        <th>2022</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ul>
+                                <li>Can play MP3 files from an SD card</li>
+                                <li>Can select from different folders/playlists</li>
+                                <li>Has standard pause/play/skip functions</li>
+                            </ul>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <th><a class="link" href="https://github.com/cooled909/fmradio/tree/main">FM Radio</a></th>
+                        <th>2022</th>
+                    </tr>
+                    <tr >
+                        <td colspan="2">
+                            <ul>
+                                <li>Can pick up FM signals and output the audio</li>
+                                <li>Can save favorite stations</li>
+                                <li>Skips frequencies that have low power/aren't broadcasting</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>           
+            </div>
+        </div>
+        <div class="iconNotice">Social media icons from <a class="link" href="https://www.flaticon.com">flaticon</a></div>
     </body>
 </html>
