@@ -3,16 +3,81 @@
     <head>
         <meta charset="utf-8">
         <title>Eddie's website</title>
+        <style>
+            .headshot {
+                display: block;
+                margin-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 256px;
+                height: 256px;
+                border-radius: 8px;
+            }
+            h1 {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 26px;
+            }
+            h2 {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            h3 {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            ul {
+                line-height: 200%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .social {
+                text-align: center;
+            }
+            .bio {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 500px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                line-height: 200%;
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .list{
+                text-align: center;
+            }
+            .list ul {
+                display: inline-block;
+                text-align: left;
+            }
+            a.socialLink {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            table.edu td {
+                line-height: 200%;
+            }
+            table.edu th {
+                line-height: 100%;
+            }
+        </style>
     </head>
     <body>
-        <img src="headshot.png" alt="">
+        <img class="headshot" src="headshot.png" alt="image of me">
         <h1>Edward Segura</h1>
-        <h2>CS student at UCR</h2>
+        <h2>Computer Science student at UCR</h2>
         <!--Insert socials here-->
-        <a href="https://www.linkedin.com/in/edward-segura-b8a827195/">LinkedIn</a>
-        <h3 id="about">About me</h3>
-        <p>Hello! I'm Edward Segura and I'm a fourth year Computer Science student at UCR. I am from Fontana, CA. I am interested in embedded systems and web development.</p>
-        <h3 id="work">Work Experience</h3>
+        <div class=social>
+            <a class="socialLink" href="https://www.linkedin.com/in/edward-segura-b8a827195/">LinkedIn</a>
+            <a class="socialLink" href="https://github.com/cooled909">GitHub</a>
+        </div>
+        <h3 class="about">About me</h3>
+        <div class="bio">Hello! I'm Edward Segura and I'm a fourth year Computer Science student at UCR. 
+            I am from Fontana, CA. I am interested in embedded systems and web development.</div>
+        <h3 class="work">Work Experience</h3>
         <table>
             <tbody>
                 <tr>
@@ -47,8 +112,8 @@
                 </tr>
             </tbody>
         </table>
-        <h3 id="edu">Education</h3>
-        <table>
+        <h3 class="edu">Education</h3>
+        <table class="edu">
             <tbody>
                 <tr>
                     <th>University of California, Riverside</th>
@@ -62,39 +127,60 @@
                 </tr>
             </tbody>
         </table>
-        <h3 id="courses">Coursework</h3>
-        <ul>
-            <li>CS120A - Logic Design</li>
-            <li>CS120B - Intro to Embedded Systems</li>
-            <li>CS122A - Intermediate Embedded Systems</li>
-            <li>CS153 - Design of Operating System</li>
-            <li>CS141 - Intermediate Data Structures and Alogorithms</li>
-            <li>CS150 - Automata and Formal Languages</li>
-        </ul>
-        <h3 id="skills">Skills</h3>
-        <ul>
-            <li>C++/C</li>
-            <li>Python</li>
-            <li>Arduino</li>
-            <li>HTML/CSS</li>
-            <li>Github</li>
-        </ul>
-        <h3 id="projects">Projects</h3>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=ZXzJjhID-gw">MP3 Player</a> 
-             <ul>
-                 <li>Can play MP3 files from an SD card</li>
-                 <li>Can select from different folders/playlists</li>
-                 <li>Has standard pause/play/skip functions</li>
-             </ul>
-             </li>  
-            <li><a href="https://github.com/cooled909/fmradio/tree/main">FM Radio</a>
+        <h3 class="courses">Coursework</h3>
+        <div class="list">
             <ul>
-                <li>Can pick up FM signals and output the audio</li>
-                <li>Can save favorite stations</li>
-                <li>Skips frequencies that have low power/aren't broadcasting</li>
+                <li>CS120A - Logic Design</li>
+                <li>CS120B - Intro to Embedded Systems</li>
+                <li>CS122A - Intermediate Embedded Systems</li>
+                <li>CS153 - Design of Operating System</li>
+                <li>CS141 - Intermediate Data Structures and Alogorithms</li>
+                <li>CS150 - Automata and Formal Languages</li>
             </ul>
-            </li>
-        </ul>
+        </div>
+        <h3 class="skills">Skills</h3>
+        <div class="list">
+            <ul>
+                <li>C++/C</li>
+                <li>Python</li>
+                <li>Arduino</li>
+                <li>HTML/CSS</li>
+                <li>Github</li>
+            </ul>
+        </div>
+        <h3 class="projects">Projects</h3>
+        <div class="projectList">
+            <table>
+                <tbody>
+                <tr>
+                    <th><a href="https://www.youtube.com/watch?v=ZXzJjhID-gw">MP3 Player</a></th>
+                    <th>2022</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li>Can play MP3 files from an SD card</li>
+                            <li>Can select from different folders/playlists</li>
+                            <li>Has standard pause/play/skip functions</li>
+                        </ul>
+                    </td> 
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/cooled909/fmradio/tree/main">FM Radio</a></th>
+                    <th>2022</th>
+                </tr>
+                <tr >
+                    <td colspan="2">
+                        <ul>
+                            <li>Can pick up FM signals and output the audio</li>
+                            <li>Can save favorite stations</li>
+                            <li>Skips frequencies that have low power/aren't broadcasting</li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            
+        </div>
     </body>
 </html>
